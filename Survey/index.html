@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 請定義問券名稱 -->
+    <title> ? </title>
+
+    <style>
+        body {
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("img/tooth_01.png");
+            background-size: 40%;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+    <h2>口腔清潔習慣調查</h2>
+    <form>
+        <div>
+            <label for="">性別:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">男</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">女</label>
+        </div>
+        <div>
+            年紀:
+            <input type="radio" name="age" id="age1">
+            <label for="age1">未滿18</label>
+            <input type="radio" name="age" id="age2">
+            <label for="age2">18~30</label>
+            <input type="radio" name="age" id="age3">
+            <label for="age3">31~44</label>
+            <input type="radio" name="age" id="age4">
+            <label for="age4">45~59</label>
+            <input type="radio" name="age" id="age5">
+            <label for="age5">60以上</label>
+        </div>
+        <div>
+            使用牙刷的類型:
+            <input type="radio" name="toothbrush" id="toothbrush1">
+            <label for="toothbrush1">一般牙刷</label>
+            <input type="radio" name="toothbrush" id="toothbrush2">
+            <label for="toothbrush2">電動牙刷</label>
+        </div>
+        <div>
+            您一天刷牙的次數:
+            <input type="number" name="quantity" min="0" max="5">
+        </div>
+        <div>
+            習慣在什麼時候刷牙:
+            <input type="checkbox" name="time" id="time1">
+            <label for="time1">早上</label>
+            <input type="checkbox" name="tool" id="time2">
+            <label for="time2">中午</label>
+            <input type="checkbox" name="tool" id="time3">
+            <label for="time3">晚上</label>
+        </div>
+        <div>
+            平常還有使用的潔牙工具或產品:
+            <input type="checkbox" name="tool" id="tool1">
+            <label for="tool1">牙線</label>
+            <input type="checkbox" name="tool" id="tool2">
+            <label for="tool2">牙籤</label>
+            <input type="checkbox" name="tool" id="tool3">
+            <label for="tool3">漱口水</label>
+            <input type="checkbox" name="tool" id="tool4">
+            <label for="tool4">潔牙口香糖</label>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <input type="button" onclick="alert('謝謝您的問卷填寫!')" value="送出">
+        </div>
+
+
+    </form>
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <!-- 3. 挑選 至少 1 個問題，設置 pattern 檢核 -->
+
+</body>
+
+</html>
